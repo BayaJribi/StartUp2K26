@@ -1,0 +1,56 @@
+.about {
+    padding: 4rem 0;
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about__text {
+    flex: 1 1 500px;
+}
+
+.about__title {
+    font-size: 2.5rem;
+    font-family: var(--second-font);
+    margin-bottom: 1.5rem;
+    background: linear-gradient(180deg, #c5a059 0%, #7d5e28 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.about__description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about__image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+
+.about__image img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:900px) {
+    .about__content {
+        flex-direction: column;
+        margin-inline: 1.5rem;
+
+    }
+}

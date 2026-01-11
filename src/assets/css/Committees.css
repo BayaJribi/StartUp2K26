@@ -1,0 +1,127 @@
+/*=============== COMMITTEES SECTION ===============*/
+.committees {
+  padding: 4rem 1.5rem;
+  background-color: var(--body-color);
+  text-align: center;
+}
+
+.committees__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.committees__title {
+  font-family: var(--second-font);
+  background: linear-gradient(180deg, #c5a059 0%, #7d5e28 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Grid wrapper for horizontal scroll */
+.committees__grid {
+  display: grid;
+  grid-auto-flow: column;
+  /* horizontal flow */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+/* Hide scrollbar nicely */
+.committees__grid::-webkit-scrollbar {
+  display: none;
+}
+
+.committees__grid {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Individual card */
+.committee__card {
+  scroll-snap-align: start;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+  min-width: 200px;
+  /* ensures 3 cards fit in viewport */
+}
+
+.committee__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-color: var(--first-color);
+}
+
+.committee__logo {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.committee__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--first-color);
+}
+
+.committee__moto {
+  font-family: var(--arabic-font);
+  font-size: 1.1rem;
+  /* Slightly larger for Arabic readability */
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .committees__title {
+    font-size: 2rem;
+  }
+
+  .committee__card {
+    min-width: 180px;
+    padding: 1.5rem 1rem;
+  }
+
+  .committee__name {
+    font-size: 1.1rem;
+  }
+
+  .committee__moto {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .committees__title {
+    font-size: 1.8rem;
+  }
+
+  .committee__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .committee__card {
+    min-width: 150px;
+    /* 1-2 cards visible on mobile */
+  }
+}

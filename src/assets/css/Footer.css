@@ -1,0 +1,109 @@
+.footer {
+    /* Dark Metal Footer - Matching Header */
+    background: linear-gradient(180deg, #3a3f45 0%, #1a1f24 100%);
+    color: var(--text-color);
+    padding: 2rem 0;
+    /* Reduced padding */
+    font-family: var(--body-font);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+    /* Shadow upwards */
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__brand {
+    flex: 1 1 250px;
+}
+
+.footer__brand img {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+.footer__brand p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer__links {
+    flex: 1 1 150px;
+}
+
+.footer__links h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer__links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__links li {
+    margin-bottom: .5rem;
+}
+
+.footer__links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--first-color);
+    text-shadow: 0 0 8px rgba(197, 160, 89, 0.4);
+}
+
+.footer__social {
+    flex: 1 1 150px;
+}
+
+.footer__social h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--first-color);
+    font-family: var(--second-font);
+}
+
+.footer__social a {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.footer__social a:hover {
+    color: var(--first-color);
+    transform: translateY(-3px);
+}
+
+.footer__copy {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: .85rem;
+    color: #aaa;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+@media screen and (max-width:900px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__social a {
+        margin-left: .75rem;
+        margin-right: .75rem;
+    }
+}

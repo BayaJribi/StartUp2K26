@@ -1,0 +1,115 @@
+.contact,
+.oc-page {
+    padding: 4rem 0;
+    margin-inline: 1.5rem;
+}
+
+.oc-page__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--second-font);
+    background: linear-gradient(180deg, #c5a059 0%, #7d5e28 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.oc-page__description {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.oc-page__grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--second-font);
+    background: linear-gradient(180deg, #c5a059 0%, #7d5e28 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.contact__description {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.oc-page__grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.oc-page__departments {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.oc-page__dept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.oc-page__ocs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    /* Optional: Draw a subtle line connecting */
+}
+
+/* Connectors */
+.oc-page__connector {
+    width: 2px;
+    height: 30px;
+    background: linear-gradient(to bottom, var(--first-color), transparent);
+}
+
+.contact__cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* MemberCard styles moved to MemberCard.css */
+
+@media screen and (max-width:900px) {
+    .contact__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    .contact,
+    .oc-page {
+        margin-inline: auto;
+    }
+}

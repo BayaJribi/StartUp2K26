@@ -1,0 +1,95 @@
+.host {
+  position: relative;
+  padding: 6rem 0;
+  background-color: var(--body-color);
+  /* Dark */
+  overflow: hidden;
+}
+
+.host__container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+}
+
+.host__title {
+  font-family: var(--second-font);
+  background: linear-gradient(180deg, #c5a059 0%, #7d5e28 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.host__description {
+  font-size: 1rem;
+  line-height: 1.9;
+  letter-spacing: .5px;
+}
+
+.host__logo-bg {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  max-width: 350px;
+  opacity: .06;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/*=============== HOST SECTION RESPONSIVE ===============*/
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .host {
+    padding: 6rem 2rem;
+    /* reduce vertical padding and add horizontal padding */
+  }
+
+  .host__container {
+    max-width: 650px;
+  }
+
+  .host__title {
+    font-size: 2.2rem;
+  }
+
+  .host__description {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .host__logo-bg {
+    max-width: 280px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .host {
+    padding: 4rem 1.5rem;
+    /* smaller padding on mobile */
+  }
+
+  .host__container {
+    max-width: 100%;
+  }
+
+  .host__title {
+    font-size: 1.8rem;
+  }
+
+  .host__description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .host__logo-bg {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,182 @@
+  /*=============== HEADER ===============*/
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    /* Dark Metal Header */
+    background: linear-gradient(180deg, #3a3f45 0%, #1a1f24 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+    z-index: var(--z-fixed);
+    transition: background-color 0.4s, box-shadow 0.4s;
+  }
+
+  /* Shadow when scrolling */
+  .shadow-header {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+  }
+
+  /*=============== NAV ===============*/
+  .nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5rem;
+  }
+
+  /* Logo */
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-family: var(--second-font);
+    color: var(--black-color);
+  }
+
+  .nav__logo img {
+    padding-left: 0;
+    width: 150px;
+    height: auto;
+  }
+
+  .nav__logo span {
+    font-weight: var(--font-bold);
+  }
+
+  /*=============== NAV LINKS ===============*/
+  .nav__list {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  .nav__link {
+    color: var(--white-color);
+    /* Light text for dark header */
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+
+  .nav__link:hover {
+    color: var(--first-color);
+    /* Gold hover */
+    text-shadow: 0 0 8px var(--first-color);
+  }
+
+  /*=============== TOGGLE & CLOSE ICONS ===============*/
+  .nav__toggle,
+  .nav__close {
+    display: flex;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Close button */
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    color: var(--black-color);
+  }
+
+  /*=============== MOBILE NAV ===============*/
+  @media screen and (max-width: 1150px) {
+    .nav__logo img {
+      width: 150px;
+    }
+
+    .nav__toggle {
+      color: var(--black-color);
+      background-color: transparent;
+      /* removed the white background */
+      padding: 0;
+      /* remove extra padding */
+      border: none;
+      /* no border */
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+
+    .nav__menu {
+      position: absolute;
+      top: 100%;
+      /* hidden by default */
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem 0;
+      transition: top 0.4s ease, opacity 0.4s ease;
+      opacity: 0;
+      pointer-events: none;
+      /* disables clicks when hidden */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 200;
+    }
+
+    .nav__menu.show {
+      top: var(--header-height);
+      /* below header */
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .nav__list {
+      flex-direction: column;
+      row-gap: 2.5rem;
+      align-items: center;
+    }
+  }
+
+  /*=============== DESKTOP NAV ===============*/
+  @media screen and (min-width: 1151px) {
+    .nav__menu {
+      position: relative;
+      height: auto;
+      display: flex !important;
+      background: none;
+      padding: 0;
+      flex-direction: row;
+    }
+
+    .nav__list {
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+
+    .nav__toggle,
+    .nav__close {
+      display: none;
+    }
+  }
+
+  /* Button style for "Meet the Crew" */
+  .nav__button {
+    border: 1px solid var(--white-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+  }
+
+  .nav__button:hover {
+    background: var(--first-color);
+    border-color: var(--first-color);
+    color: #1a0f00;
+    /* Dark brown/black text */
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+    text-shadow: none;
+  }

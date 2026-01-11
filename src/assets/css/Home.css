@@ -1,0 +1,245 @@
+.home {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--body-color);
+}
+
+.home__bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/dark-waves-bg.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: 0;
+  mix-blend-mode: overlay;
+  /* Blends with dark background color */
+}
+
+.home__container {
+  position: relative;
+  /* Starting from top with offset */
+  padding-top: 8rem;
+  /* Enough to clear header */
+  min-height: 110vh;
+  /* Reduced from 150vh to avoid huge gaps */
+  display: grid;
+  align-items: start;
+  /* Align to top */
+  /* z-index: 1; Removed to allow z-index interleaving */
+}
+
+.home__data {
+  text-align: center;
+  z-index: var(--z-tooltip);
+  /* Should be 10 */
+  position: relative;
+  /* Needed for z-index to work */
+}
+
+.home__subtitle {
+  font-size: var(--big-font-size);
+  font-family: var(--second-font);
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  line-height: 100%;
+  margin-bottom: 2rem;
+  background: linear-gradient(180deg, #e3e3e3 0%, #8f8f8f 40%, #4a4a4a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.home__title span {
+  font-size: var(--bigger-font-size);
+  background: linear-gradient(180deg, #c5a059 0%, #7d5e28 100%);
+  /* Gold gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home__button {
+  display: inline-block;
+  background: linear-gradient(180deg, #3a3f45 0%, #1a1f24 100%);
+  border: 1px solid #555;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  color: #fff;
+  font-family: var(--second-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home__button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 12px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 0 15px var(--first-color);
+  border-color: var(--first-color);
+}
+
+.home__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__ship {
+  width: 100%;
+  max-width: 320px;
+  /* Smaller default for mobile */
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+  animation: ship-float 4s ease-in-out infinite;
+}
+
+/* Ship animation */
+@keyframes ship-float {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-15px);
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .home__container {
+    padding-top: 8rem;
+  }
+
+  .home__title {
+    font-size: 5rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1150px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-top: 6rem;
+    /* Reduced from 12rem/4rem chaos */
+    /* Centered vertically */
+  }
+
+  .home__data {
+    text-align: left;
+  }
+
+  .home__ship {
+    max-width: 700px;
+    transform: scale(1.1);
+  }
+}
+
+/* Default (Mobile) - Waves sit at bottom */
+.home__waves-fore {
+  position: absolute;
+  bottom: 5%;
+  /* Slight overlap */
+  left: 0%;
+  width: 200%;
+  min-height: 15vh;
+  height: auto;
+  object-fit: cover;
+  z-index: 3;
+  opacity: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 -5px 10px rgba(0, 0, 0, 0.5));
+  animation: wave-move 5s ease-in-out infinite alternate;
+}
+
+.home__waves-back {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 200%;
+  min-height: 25vh;
+  /* Taller on mobile to fill bg */
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: wave-move-back 7s ease-in-out infinite alternate-reverse;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* Tablet adjustments if needed */
+  .home__waves-fore {
+    bottom: -20%;
+  }
+
+  .home__waves-back {
+    bottom: -10%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  /* Desktop - pushed down as per previous request */
+  .home__waves-fore {
+    min-height: 25vh;
+    bottom: -65%;
+    /* Restoring the "low" look for large screens */
+  }
+
+  .home__waves-back {
+    min-height: 40vh;
+    bottom: -50%;
+  }
+
+  .home__ship {
+    max-width: 650px;
+  }
+}
+
+@keyframes wave-move {
+  0% {
+    transform: translateY(0) scale(1.02);
+  }
+
+  100% {
+    transform: translateY(10px) scale(1);
+  }
+}
+
+@keyframes wave-move-back {
+  0% {
+    transform: translateY(-15px) translateY(5px) scale(1.05);
+  }
+
+  100% {
+    transform: translateY(15px) translateY(0) scale(1);
+  }
+}

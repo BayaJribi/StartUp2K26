@@ -1,0 +1,54 @@
+.member__card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 24px hsla(40, 24%, 4%, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.member__card:hover {
+    transform: translateY(-5px);
+    border-color: var(--first-color);
+}
+
+.member__photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: 3px solid var(--first-color);
+}
+
+.member__name {
+    font-size: 1.25rem;
+    margin-bottom: .25rem;
+    color: var(--first-color);
+    font-family: var(--second-font);
+}
+
+.member__role {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: .5rem;
+}
+
+.member__email a {
+    color: var(--first-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-shadow 0.3s;
+}
+
+.member__email a:hover {
+    text-shadow: 0 0 5px rgba(197, 160, 89, 0.5);
+    text-decoration: underline;
+}
