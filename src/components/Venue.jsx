@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/Venue.css";
+import VenueImg from "../assets/img/Venue1.jpg";
 
 const venueDetails = [
   {
@@ -42,7 +43,7 @@ function Venue() {
         <div className="venue__content">
           <div className="venue__images">
             <img
-              src="src/assets/img/Venue1.jpg"
+              src={VenueImg}
               alt="Venue"
               className="venue__image"
             />

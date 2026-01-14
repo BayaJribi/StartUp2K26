@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/css/Home.css";
 import Ship from "../assets/img/boat_transparent_clean.png";
+import Waves from "../assets/img/waves_transparent.png";
 
 function Home() {
   return (
@@ -25,10 +26,10 @@ function Home() {
       </div>
 
       {/* Back Waves - Behind Ship */}
-      <img src="src/assets/img/waves_transparent.png" alt="Waves Back" className="home__waves-back" />
+      <img src={Waves} alt="Waves Back" className="home__waves-back" />
 
       {/* Foreground Waves - Full Width */}
-      <img src="src/assets/img/waves_transparent.png" alt="Waves Front" className="home__waves-fore" />
+      <img src={Waves} alt="Waves Front" className="home__waves-fore" />
     </section>
   );
 }

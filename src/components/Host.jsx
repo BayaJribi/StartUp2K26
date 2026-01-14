@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/Host.css";
+import SfaxLogo from "../assets/img/LCs/Sfax.png";
 
 function Host() {
   return (
@@ -15,7 +16,7 @@ function Host() {
           this voyage, where legends are forged and the next captains set sail.
         </p>
       </div>
-      <img src="src/assets/img/LCs/Sfax.png" alt="LC SFAX Logo" className="host__logo-bg" />
+      <img src={SfaxLogo} alt="LC SFAX Logo" className="host__logo-bg" />
     </section>
   );
 }

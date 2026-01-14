@@ -2,12 +2,20 @@ import React from "react";
 import MemberCard from "../components/MemberCard";
 import "../assets/css/Contact.css"; // Reusing grid styles or create new one
 
+// Import OC Images
+import OCPImg from "../assets/img/OCs/LCVP F&L.png";
+import BayaImg from "../assets/img/OCs/LCVP TM&IM.png";
+import LinaImg from "../assets/img/OCs/LCVP oGT.png";
+import AlaImg from "../assets/img/OCs/LCP.png";
+import YassineBImg from "../assets/img/OCs/LCVP MKT.png";
+import LogoImg from "../assets/img/LogoStartup.png";
+
 // Data structure organized by hierarchy
 const teamStructure = {
   ocp: {
     name: "Imen Mtibaa",
     role: "Organizing Committee President",
-    image: "src/assets/img/OCs/LCVP F&L.png",
+    image: OCPImg,
   },
   departments: [
     {
@@ -15,7 +23,7 @@ const teamStructure = {
       ocvp: {
         name: "Baya Jribi",
         role: "OCVP Finance",
-        image: "src/assets/img/OCs/LCVP TM&IM.png",
+        image: BayaImg,
       },
       ocs: [],
     },
@@ -24,13 +32,13 @@ const teamStructure = {
       ocvp: {
         name: "Lina Ben Hmida",
         role: "OCVP Delegate Experience",
-        image: "src/assets/img/OCs/LCVP oGT.png",
+        image: LinaImg,
       },
       ocs: [
         {
           name: "Oumaima Chaari",
           role: "OC Delegate Experience",
-          image: "src/assets/img/LOGO COLORS-01.png",
+          image: LogoImg,
         },
       ],
     },
@@ -39,23 +47,23 @@ const teamStructure = {
       ocvp: {
         name: "Ala Bardaa",
         role: "OCVP Sales",
-        image: "src/assets/img/OCs/LCP.png",
+        image: AlaImg,
       },
       ocs: [
         {
           name: "Ayoub Derbala",
           role: "OC Sales",
-          image: "src/assets/img/LOGO COLORS-01.png",
+          image: LogoImg,
         },
         {
           name: "Mahdi Karray",
           role: "OC Sales",
-          image: "src/assets/img/LOGO COLORS-01.png",
+          image: LogoImg,
         },
         {
           name: "Yassine Souissi",
           role: "OC Sales",
-          image: "src/assets/img/LOGO COLORS-01.png",
+          image: LogoImg,
         },
       ],
     },
@@ -64,18 +72,18 @@ const teamStructure = {
       ocvp: {
         name: "Yassine Ben Bahri",
         role: "OCVP Marketing",
-        image: "src/assets/img/OCs/LCVP MKT.png",
+        image: YassineBImg,
       },
       ocs: [
         {
           name: "Khadija Gaddour",
           role: "OC Marketing",
-          image: "src/assets/img/LOGO COLORS-01.png",
+          image: LogoImg,
         },
         {
           name: "Mohamed Bellaaj",
           role: "OC Marketing",
-          image: "src/assets/img/LOGO COLORS-01.png",
+          image: LogoImg,
         },
       ],
     },
