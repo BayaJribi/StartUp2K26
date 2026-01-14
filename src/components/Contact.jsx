@@ -1,6 +1,8 @@
 import React from "react";
 import "../assets/css/Contact.css";
 import MemberCard from "./MemberCard";
+import LinaImg from "../assets/img/OCs/LCVP oGT.png";
+import ImenImg from "../assets/img/OCs/LCVP F&L.png";
 
 function Contact() {
   return (
@@ -13,13 +15,13 @@ function Contact() {
 
         <div className="contact__cards">
           <MemberCard
-            image="src/assets/img/OCs/LCVP F&L.png"
+            image={ImenImg}
             name="Imen Mtibaa"
             role="Organizing Committee President"
             email="mtibaaimen124@aiesec.net"
           />
           <MemberCard
-            image="src/assets/img/OCs/LCVP oGT.png"
+            image={LinaImg}
             name="Lina Ben Hmida"
             role="Organizing Committee Vice President Delegate Experience"
             email="lina_benhmida@aiesec.net"
