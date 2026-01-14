@@ -2,7 +2,7 @@ import React from "react";
 
 function RegistrationPage() {
   return (
-    <section className="registration-page ">
+    <section className="registration-page container ">
       <h2 className="registration-page__title">Register for Start'Up 2K26</h2>
       <p className="registration-page__description">
         Fill out the form below to secure your spot!

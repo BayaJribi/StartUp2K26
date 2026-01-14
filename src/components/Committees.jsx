@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/Committees.css";
 
 const committees = [
-  { name: "LC Bardo", logo: "src/assets/img/LCs/Bardo.png", moto: "باردو نعطيها عينيا و وقت طويل" },
+  { name: "LC Bardo", logo: "src/assets/img/LCs/Bardo.png", moto: "باردو ديما قوية" },
   { name: "LC Bizerte", logo: "src/assets/img/LCs/Bizerte.png", moto: " تعيش تعيش تعيش" },
   { name: "LC Carthage", logo: "src/assets/img/LCs/Carthage.png", moto: "لن تقع اثارنا أبدا" },
   { name: "LC Hadrumet", logo: "src/assets/img/LCs/Hadrumet.png", moto: "حضرموت هنا و ستحقق احلامها الكبرى" },
@@ -19,7 +19,7 @@ function Committees() {
   return (
     <section className="committees">
       <div className="committees__container">
-        <h2 className="committees__title">Passengers on Board</h2>
+        <h2 className="committees__title">The Allied Fleets</h2>
         <div className="committees__grid">
           {committees.map((committee, index) => (
             <div className="committee__card" key={index}>

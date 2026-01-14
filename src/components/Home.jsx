@@ -8,7 +8,7 @@ function Home() {
       <div className="home__bg-overlay"></div>
       <div className="home__container container">
         <div className="home__data">
-          <h3 className="home__subtitle">Welcome to</h3>
+          <h3 className="home__subtitle">Welcome Aboard</h3>
           <h1 className="home__title">
             START'UP <br />
             <span>2K26</span>

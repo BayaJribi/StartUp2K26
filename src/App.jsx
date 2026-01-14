@@ -7,9 +7,12 @@ import HomePage from "./pages/HomePage";
 import OCPage from "./pages/OCPage"; // New page
 import RegistrationPage from "./pages/RegistrationPage"; // New page
 
+import MusicPlayer from "./components/MusicPlayer"; // New component
+
 function App() {
   return (
     <Router>
+      <MusicPlayer /> {/* Audio player with permissions */}
       <Header />
       <main className="main">
         <Routes>

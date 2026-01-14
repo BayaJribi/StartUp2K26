@@ -111,8 +111,9 @@
   /* Smaller default for mobile */
   position: relative;
   z-index: 2;
+  /* Above waves */
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
-  animation: ship-float 4s ease-in-out infinite;
+  animation: ship-float 14s ease-in-out infinite;
 }
 
 /* Ship animation */
@@ -120,11 +121,11 @@
 
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(0px)translateY(-25px);
   }
 
   50% {
-    transform: translateX(-15px);
+    transform: translateX(-150px);
   }
 }
 

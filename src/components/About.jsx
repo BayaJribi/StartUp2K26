@@ -6,13 +6,12 @@ function About() {
       <div className="about__container container">
         <div className="about__content">
           <div className="about__text">
-            <h2 className="about__title">About Start'Up 2K26</h2>
+            <h2 className="about__title">The Legend of Start'Up 2K26</h2>
             <p className="about__description">
-              Start'Up 2K26 is a conference designed specifically for newly elected 
-              Executive Boards of Local Committees. It marks the beginning of your 
-              term, providing essential insights, training, and inspiration to lead 
-              your teams effectively. Through workshops, networking, and interactive 
-              sessions, you’ll gain the tools to set ambitious goals, drive impact, 
+              Start'Up 2K26 is a conference designed specifically for newly elected
+              Executive Boards of Local Committees. It marks the beginning of your
+              term, providing essential insights, training, and inspiration to lead
+              your teams effectively. Through it, you'll gain the tools to set ambitious goals, drive impact,
               and make this term your most successful one yet.
             </p>
           </div>

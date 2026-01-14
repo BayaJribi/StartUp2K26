@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/img/LogoStartup.png";
 import "../assets/css/Footer.css";
 
 function Footer() {
@@ -7,8 +8,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container container">
         <div className="footer__brand">
-          <img src="assets/img/FullStartUp.png" alt="Start'Up 2K26 Logo" />
-          <p>Start'Up 2K26 – Empowering newly elected EBs to lead their terms with impact.</p>
+          <Link to="/">
+            <img src={Logo} alt="Start'Up 2K26 Logo" />
+          </Link>
+          <p> Empowering newly elected EBs to lead their terms with impact.</p>
         </div>
 
         <div className="footer__links">
@@ -18,13 +21,6 @@ function Footer() {
             <li><Link to="/meet-oc">Meet the Crew</Link></li>
             <li><Link to="/register">Register Now</Link></li>
           </ul>
-        </div>
-
-        <div className="footer__social">
-          <h3>Follow Us</h3>
-          <a href="#"><i className="ri-facebook-fill"></i></a>
-          <a href="#"><i className="ri-instagram-fill"></i></a>
-          <a href="#"><i className="ri-linkedin-fill"></i></a>
         </div>
       </div>
 

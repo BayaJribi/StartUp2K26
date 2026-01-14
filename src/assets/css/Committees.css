@@ -48,6 +48,7 @@
 
 /* Individual card */
 .committee__card {
+  margin: 5px;
   scroll-snap-align: start;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
@@ -80,6 +81,8 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--first-color);
+  font-family: var(--second-font);
+
 }
 
 .committee__moto {

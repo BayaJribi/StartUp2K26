@@ -5,7 +5,7 @@ function Host() {
   return (
     <section className="host" id="host">
       <div className="host__container container">
-        <h2 className="host__title">The Crew Behind the Journey</h2>
+        <h2 className="host__title">The Hosting Flagship</h2>
         <p className="host__description">
           Since <strong>1987</strong>, <strong>LC SFAX</strong> has been sailing through
           uncharted waters, raising leaders, explorers, and changemakers.

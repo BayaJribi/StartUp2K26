@@ -87,7 +87,7 @@ function OCPage() {
 
   return (
     <section className="oc-page container">
-      <h2 className="oc-page__title">Meet the OC Team</h2>
+      <h2 className="oc-page__title">Command Crew of 2K26</h2>
       <p className="oc-page__description">
         Here you can learn more about the Organizing Committee of Start'Up 2K26.
       </p>

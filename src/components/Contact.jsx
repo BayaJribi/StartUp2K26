@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section className="contact" id="contact">
       <div className="contact__container container">
-        <h2 className="contact__title">Contact the OC Team</h2>
+        <h2 className="contact__title">Signal the Command</h2>
         <p className="contact__description">
           Have questions or need more information about Start'Up 2K26? Reach out to the key members of our Organizing Committee below.
         </p>
