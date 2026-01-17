@@ -9,6 +9,11 @@ import LinaImg from "../assets/img/OCs/LCVP oGT.png";
 import AlaImg from "../assets/img/OCs/LCP.png";
 import YassineBImg from "../assets/img/OCs/LCVP MKT.png";
 import LogoImg from "../assets/img/LogoStartup.png";
+import MahdiImg from "../assets/img/OCs/OC Sales 2.png";
+import DybabaImg from "../assets/img/OCs/OC Sales 1.png";
+import OumaImg from "../assets/img/OCs/OC DXP.png";
+import BouhaImg from "../assets/img/OCs/OC MKT 2.png";
+import DreamyImg from "../assets/img/OCs/OC MKT 1.png";
 
 // Data structure organized by hierarchy
 const teamStructure = {
@@ -38,7 +43,7 @@ const teamStructure = {
         {
           name: "Oumaima Chaari",
           role: "OC Delegate Experience",
-          image: LogoImg,
+          image: OumaImg,
         },
       ],
     },
@@ -53,12 +58,12 @@ const teamStructure = {
         {
           name: "Ayoub Derbala",
           role: "OC Sales",
-          image: LogoImg,
+          image: DybabaImg,
         },
         {
           name: "Mahdi Karray",
           role: "OC Sales",
-          image: LogoImg,
+          image: MahdiImg,
         },
         {
           name: "Yassine Souissi",
@@ -78,12 +83,12 @@ const teamStructure = {
         {
           name: "Khadija Gaddour",
           role: "OC Marketing",
-          image: LogoImg,
+          image: DreamyImg,
         },
         {
           name: "Mohamed Bellaaj",
           role: "OC Marketing",
-          image: LogoImg,
+          image: BouhaImg,
         },
       ],
     },

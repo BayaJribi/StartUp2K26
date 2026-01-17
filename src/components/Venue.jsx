@@ -9,7 +9,7 @@ const venueDetails = [
   },
   {
     title: "Venue",
-    value: "Golf Residence Hotel",
+    value: "Golf Residence Hotel - Kantaoui Sousse",
   },
   {
     title: "Participation Fee",

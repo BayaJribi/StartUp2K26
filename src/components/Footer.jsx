@@ -6,7 +6,7 @@ import "../assets/css/Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__container container">
+      <div className="footer__container">
         <div className="footer__brand">
           <Link to="/">
             <img src={Logo} alt="Start'Up 2K26 Logo" />

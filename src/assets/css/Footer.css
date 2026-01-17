@@ -55,7 +55,6 @@
 
 .footer__links li {
     margin-bottom: 0;
-    padding-right: 2rem;
 }
 
 .footer__links a {
@@ -84,5 +83,20 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 0rem;
+    }
+
+    .footer__links ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer__brand {
+        text-align: center;
+        max-height: 150px;
+    }
+
+    .footer__container img {
+        margin: 15px auto;
     }
 }

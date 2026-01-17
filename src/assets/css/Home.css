@@ -108,6 +108,7 @@
 .home__ship {
   width: 100%;
   max-width: 320px;
+  top: -4rem;
   /* Smaller default for mobile */
   position: relative;
   z-index: 2;
@@ -125,7 +126,7 @@
   }
 
   50% {
-    transform: translateX(-150px);
+    transform: translateX(-8rem);
   }
 }
 
@@ -204,6 +205,7 @@
   .home__waves-back {
     bottom: -10%;
   }
+
 }
 
 @media screen and (min-width: 1150px) {
@@ -211,13 +213,13 @@
   /* Desktop - pushed down as per previous request */
   .home__waves-fore {
     min-height: 25vh;
-    bottom: -65%;
+    bottom: -60%;
     /* Restoring the "low" look for large screens */
   }
 
   .home__waves-back {
     min-height: 40vh;
-    bottom: -50%;
+    bottom: -45%;
   }
 
   .home__ship {

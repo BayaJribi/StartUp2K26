@@ -34,11 +34,10 @@
 .about__description {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 2rem;
 }
 
 .about__image {
-    flex: 1 1 400px;
+    flex: 1 1 250px;
     text-align: center;
 }
 
