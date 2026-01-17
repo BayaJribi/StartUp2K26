@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/css/Committees.css";
 import BardoLogo from "../assets/img/LCs/Bardo.png";
 import BizerteLogo from "../assets/img/LCs/Bizerte.png";
+import BullaRegiaLogo from "../assets/img/LCs/Bulla Regia.png";
 import CarthageLogo from "../assets/img/LCs/Carthage.png";
 import HadrumetLogo from "../assets/img/LCs/Hadrumet.png";
 import MedinaLogo from "../assets/img/LCs/Medina.png";
@@ -15,6 +16,7 @@ import UniversityLogo from "../assets/img/LCs/University.png";
 const committees = [
   { name: "LC Bardo", logo: BardoLogo, moto: "باردو ديما قوية" },
   { name: "LC Bizerte", logo: BizerteLogo, moto: " تعيش تعيش تعيش" },
+  { name: "SU Bulla Regia", logo: BullaRegiaLogo, moto: " " },
   { name: "LC Carthage", logo: CarthageLogo, moto: "لن تقع اثارنا أبدا" },
   { name: "LC Hadrumet", logo: HadrumetLogo, moto: "حضرموت هنا و ستحقق احلامها الكبرى" },
   { name: "LC Medina", logo: MedinaLogo, moto: "مدينة ما ننساك" },
