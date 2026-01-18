@@ -9,8 +9,9 @@ import LinaImg from "../assets/img/OCs/LCVP oGT.png";
 import AlaImg from "../assets/img/OCs/LCP.png";
 import YassineBImg from "../assets/img/OCs/LCVP MKT.png";
 import LogoImg from "../assets/img/LogoStartup.png";
-import MahdiImg from "../assets/img/OCs/OC Sales 2.png";
 import DybabaImg from "../assets/img/OCs/OC Sales 1.png";
+import MahdiImg from "../assets/img/OCs/OC Sales 2.png";
+import YassineSImg from "../assets/img/OCs/OC Sales 3.png";
 import OumaImg from "../assets/img/OCs/OC DXP.png";
 import BouhaImg from "../assets/img/OCs/OC MKT 2.png";
 import DreamyImg from "../assets/img/OCs/OC MKT 1.png";
@@ -68,7 +69,7 @@ const teamStructure = {
         {
           name: "Yassine Souissi",
           role: "OC Sales",
-          image: LogoImg,
+          image: YassineSImg,
         },
       ],
     },
