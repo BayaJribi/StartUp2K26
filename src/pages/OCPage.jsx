@@ -86,11 +86,7 @@ const teamStructure = {
           role: "OC Marketing",
           image: DreamyImg,
         },
-        {
-          name: "Mohamed Bellaaj",
-          role: "OC Marketing",
-          image: BouhaImg,
-        },
+
       ],
     },
   ],
